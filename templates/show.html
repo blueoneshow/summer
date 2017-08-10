@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+          <h1>記錄：</h1>
+        <table>
+        {% for record in records %}
+                <tr><Td>{{record.seconds}}</Td><td>{{record.publication_date}}</td></tr>
+        {% endfor %}
+        </table>
+        <a href="/">返回目錄</a>
+  
+{% endblock %}

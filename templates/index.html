@@ -1,10 +1,6 @@
-<html>
-        <head>
-        </head>
-        <body>
-                歡迎光臨我的網站
-                {% for friend in friends %}
-                <p><a href="{{friend}}">{{friend}}</a></p>
-                {% endfor %}
-        </body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+          <a href="/static/adtime/index.html"><img src=/static/1.jpg></a> 
+          <a href="/static/pingpong/index.html"><img src=http://www.sportgamesonly.com/images/games/1440116258.jpg></a>
+{% endblock %}

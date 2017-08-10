@@ -1,3 +1,4 @@
 from django.contrib import admin
+from show.models import Record
 
-# Register your models here.
+admin.site.register(Record)

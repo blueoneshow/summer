@@ -24,4 +24,8 @@ urlpatterns = [
     url(r'^questions/$', 'question.views.index'),
     url(r'^questions/(?P<question_id>\d+)/$', 'question.views.question_detail'),
     url(r'^questions/create/$','question.views.question_create'),
+    url(r'^board/$', 'web.views.board'),
+    url(r'^post/$','web.views.post'),
+    url(r'^show/', 'show.views.show'),
+    url(r'^add/(?P<seconds>\d+)$', 'show.views.add'),
 ]
